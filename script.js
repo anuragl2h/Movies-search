@@ -2,7 +2,7 @@
 function search(){
   const input = document.getElementsByTagName("input")[0];
   const val = input.value;
-fetch(`http://www.omdbapi.com/?t=${val}&apikey=37098884`)
+fetch(`https://www.omdbapi.com/?t=${val}&apikey=37098884`)
   .then(response => response.json())
   .then(data => {
   input.value = "";
